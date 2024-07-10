@@ -1,0 +1,133 @@
+/* section#showcase */
+section#showcase .container {
+  background: #fbfaff;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 24px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.decore {
+  position: absolute;
+  z-index: -1;
+}
+
+.decore:first-child {
+  right: 0;
+  top: 0;
+}
+.decore:last-child {
+  left: 0;
+  top: 0;
+}
+/* section#showcase end */
+
+/* section#pipeline */
+
+section#pipeline .title {
+  position: relative;
+}
+
+section#pipeline .title::after,
+section#pipeline .title::before {
+  content: "";
+  width: 40%;
+  height: 2px;
+  background-color: #f4f5f4;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+section#pipeline .title::after {
+  left: auto;
+  right: 0;
+}
+
+/* section#pipeline end */
+/* section#fundraising */
+section#fundraising .reasons {
+  counter-reset: reason;
+}
+
+section#fundraising .reason {
+  box-shadow: 0 0 20px #0002;
+  padding: 2rem 6rem;
+  font-size: 18px;
+  line-height: 1.8;
+  counter-increment: reason;
+  position: relative;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+section#fundraising .reason:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px #0002;
+}
+
+section#fundraising .reason::before {
+  content: "0" counter(reason);
+  position: absolute;
+  left: 3rem;
+  color: #8053ff;
+  font-size: 24px;
+  font-weight: 700;
+}
+/* section#fundraising end */
+
+/* section#for-projects */
+section#for-projects {
+  background: linear-gradient(#fbfaff, #fff);
+  border-top-left-radius: 250px;
+  display: flex;
+  align-items: center;
+}
+
+section#for-projects .answers {
+  flex-wrap: wrap;
+}
+section#for-projects .answer {
+  box-shadow: 0 0 20px #0002;
+  padding: 1rem 3rem;
+  font-size: 18px;
+  line-height: 1.8;
+  position: relative;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  width: 48%;
+}
+
+section#for-projects .answer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px #0002;
+}
+
+section#for-projects .answer h3 {
+  position: relative;
+}
+
+section#for-projects .green-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #00d386;
+  line-height: 38px;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+}
+
+section#for-projects .green-circle i {
+  color: white;
+}
+/* section#for-projects end */

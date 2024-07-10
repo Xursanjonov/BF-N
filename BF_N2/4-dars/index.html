@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Volkhov:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Jadoo</title>
+  </head>
+  <body>
+    <img src="icons/Showcase-decore.svg" alt="Decore" class="main-decore" />
+    <input type="checkbox" id="main-sidebar-checkbox" hidden />
+    <aside class="sidebar">
+      <label for="main-sidebar-checkbox">
+        <i class="fa-solid fa-times"></i>
+      </label>
+      <ul class="flex flex-column gap-3">
+        <li class="main-navbar-item">
+          <a href="#destinations">Destination</a>
+        </li>
+        <li class="main-navbar-item"><a href="#category">Category</a></li>
+        <li class="main-navbar-item"><a href="#showcase">Showcase</a></li>
+        <li class="main-navbar-item"><a href="#">Bookings</a></li>
+        <li class="main-navbar-item"><a href="#">Login</a></li>
+        <li class="main-navbar-item"><a href="#">Sign up</a></li>
+        <li class="main-navbar-item">
+          <a href="#"> EN <i class="fa-solid fa-chevron-down"></i> </a>
+        </li>
+      </ul>
+    </aside>
+    <header
+      data-aos-duration="500"
+      data-aos="fade-down"
+      id="main-header"
+      class="py-2"
+    >
+      <nav class="container flex justify-between align-center">
+        <a href="#" class="header-logo">
+          <img src="icons/Logo.svg" alt="Jadoo logo" />
+        </a>
+        <ul class="flex gap-3 main-navbar-items">
+          <li class="main-navbar-item">
+            <a href="#destinations">Destination</a>
+          </li>
+          <li class="main-navbar-item"><a href="#category">Category</a></li>
+          <li class="main-navbar-item"><a href="#showcase">Showcase</a></li>
+          <li class="main-navbar-item"><a href="#">Bookings</a></li>
+          <li class="main-navbar-item"><a href="#">Login</a></li>
+          <li class="main-navbar-item"><a href="#">Sign up</a></li>
+          <li class="main-navbar-item">
+            <a href="#"> EN <i class="fa-solid fa-chevron-down"></i> </a>
+          </li>
+        </ul>
+        <div class="sidebar-slider">
+          <label for="main-sidebar-checkbox">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </div>
+      </nav>
+    </header>
+    <section id="showcase">
+      <div class="container flex">
+        <div data-aos-delay="500" data-aos="fade-right" class="flex-1">
+          <p class="pre-title uppercase">Best Destinations around the world</p>
+          <h1 class="text-xl showcase-title">
+            Travel,
+            <span class="enjoy">
+              enjoy
+              <img class="enjoy-decore" src="images/enjoy-decore.png" alt="" />
+            </span>
+            <br />
+            and live a new <br />
+            and full life
+          </h1>
+          <p class="text text-sm">
+            Built Wicket longer admire do barton vanity itself do in it.
+            <br />
+            Preferred to sportsmen it engrossed listening. Park gate <br />
+            sell they west hard for the.
+          </p>
+          <div class="buttons">
+            <a href="#" class="button button-1">Find out more</a>
+            <a href="#" class="button button-2">
+              <span class="circle"> <i class="fa-solid fa-play"></i></span> Play
+              Demo
+            </a>
+          </div>
+        </div>
+        <div data-aos-delay="500" data-aos="fade-left" class="flex-1">
+          <img src="images/happy-girl-traveling.png" alt="Lets go traveling" />
+        </div>
+      </div>
+    </section>
+    <section id="category" class="text-center">
+      <div class="container">
+        <p
+          data-aos="zoom-in"
+          data-aos-offset="200"
+          data-aos-delay="300"
+          class="sub-title uppercase"
+        >
+          category
+        </p>
+        <h2 data-aos="zoom-in" class="my-2 text-lg">We Offer Best Services</h2>
+        <div class="flex gap-3">
+          <div class="flex-1" data-aos="fade-up" data-aos-offset="300">
+            <article class="service-card py-3">
+              <img src="icons/antenna.svg" alt="service-1" />
+              <h4 class="my-2">Calculated Weather</h4>
+              <p>
+                Built Wicket longer admire do barton vanity itself do in it.
+              </p>
+            </article>
+          </div>
+          <div
+            class="flex-1"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-delay="100"
+          >
+            <article class="service-card py-3">
+              <img src="icons/antenna.svg" alt="service-1" />
+              <h4 class="my-2">Calculated Weather</h4>
+              <p>
+                Built Wicket longer admire do barton vanity itself do in it.
+              </p>
+            </article>
+          </div>
+          <div
+            class="flex-1"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-delay="200"
+          >
+            <article class="service-card py-3">
+              <img src="icons/antenna.svg" alt="service-1" />
+              <h4 class="my-2">Calculated Weather</h4>
+              <p>
+                Built Wicket longer admire do barton vanity itself do in it.
+              </p>
+            </article>
+          </div>
+          <div
+            class="flex-1"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-delay="300"
+          >
+            <article class="service-card py-3">
+              <img src="icons/antenna.svg" alt="service-1" />
+              <h4 class="my-2">Calculated Weather</h4>
+              <p>
+                Built Wicket longer admire do barton vanity itself do in it.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="destinations" class="text-center">
+      <div class="container">
+        <p class="sub-title uppercase">top Selling</p>
+        <h2 class="my-2 text-lg">Top Destinations</h2>
+        <div class="flex gap-3">
+          <article class="flex-1 destination-card">
+            <img src="images/Colosseo.jpeg" alt="Colosseo" />
+            <div>
+              <p class="flex justify-between">
+                <span class="city">Rome, Italy</span>
+                <span class="price">$5.2k</span>
+              </p>
+              <p><i class="fa-solid fa-location-arrow"></i> 10 Days Trip</p>
+            </div>
+          </article>
+          <article class="flex-1 destination-card">
+            <img src="images/Colosseo.jpeg" alt="Colosseo" />
+            <div>
+              <p class="flex justify-between">
+                <span class="city">Rome, Italy</span>
+                <span class="price">$5.2k</span>
+              </p>
+              <p><i class="fa-solid fa-location-arrow"></i> 10 Days Trip</p>
+            </div>
+          </article>
+          <article class="flex-1 destination-card">
+            <img src="images/Colosseo.jpeg" alt="Colosseo" />
+            <div>
+              <p class="flex justify-between">
+                <span class="city">Rome, Italy</span>
+                <span class="price">$5.2k</span>
+              </p>
+              <p><i class="fa-solid fa-location-arrow"></i> 10 Days Trip</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="booking">
+      <div class="container flex">
+        <div class="flex-1">
+          <p class="sub-title">Easy and Fast</p>
+          <h2 class="title text-lg my-2">
+            Book your next trip <br />
+            in 3 easy steps
+          </h2>
+          <ul class="booking-steps flex flex-column gap-1">
+            <li class="booking-step flex align-center gap-1">
+              <span class="step-icon">
+                <img src="icons/booking-step-1.svg" alt="choose destination" />
+              </span>
+              <div>
+                <h5 class="text-sm">Choose destination</h5>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
+                  neque iure amet
+                </p>
+              </div>
+            </li>
+            <li class="booking-step flex align-center gap-1">
+              <span class="step-icon">
+                <img src="icons/booking-step-2.svg" alt="choose destination" />
+              </span>
+              <div>
+                <h5 class="text-sm">Choose destination</h5>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
+                  neque iure amet
+                </p>
+              </div>
+            </li>
+            <li class="booking-step flex align-center gap-1">
+              <span class="step-icon">
+                <img src="icons/booking-step-3.svg" alt="choose destination" />
+              </span>
+              <div>
+                <h5 class="text-sm">Choose destination</h5>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
+                  neque iure amet
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1">
+          <article class="greece-card p-1">
+            <img src="images/Greece.jpg" alt="Greece" />
+            <h5 class="text-sm title my-1">Trip to Greece</h5>
+            <p class="my-2">14-29 June | by Robbin Joseph</p>
+            <div class="my-1">
+              <span class="greece-icon">
+                <i class="fa-solid fa-leaf"></i>
+              </span>
+              <span class="greece-icon">
+                <i class="fa-regular fa-map"></i>
+              </span>
+              <span class="greece-icon">
+                <i class="fa-solid fa-location-arrow"></i>
+              </span>
+            </div>
+            <div class="flex justify-between align-center">
+              <p>
+                <i class="fa-solid fa-building"></i>
+                24 people going
+              </p>
+              <button>
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="ongoing-card p-1 flex gap-1 align-start">
+              <img src="images/ongoing-greece.png" alt="going" />
+              <div class="flex-1 flex flex-column gap-1">
+                <p>Ongoing</p>
+                <h5 class="text-sm title">Trip to Rome</h5>
+                <p><span class="purple-text">40%</span> completed</p>
+                <div class="progress">
+                  <div class="progress-bar"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container flex gap-3">
+        <div class="flex-1">
+          <p class="sub-title uppercase">testimonials</p>
+          <h2 class="title capitalize text-lg my-2">
+            What people say <br />
+            about Us.
+          </h2>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="flex-1 testimonial-cards">
+          <article class="testimonial-card p-2">
+            <img src="images/yamach.png" alt="Yamach Kochavali" />
+            <p>
+              “On the Windows talking painted pasture yet its express parties
+              use. Sure last upon he same as knew next. Of believed or diverted
+              no.”
+            </p>
+            <h5 class="my-1">Yamach Kochavali</h5>
+            <p>Chukur, Turkiye</p>
+          </article>
+          <article class="testimonial-card p-2">
+            <img src="images/yamach.png" alt="Yamach Kochavali" />
+            <p>
+              “On the Windows talking painted pasture yet its express parties
+              use. Sure last upon he same as knew next. Of believed or diverted
+              no.”
+            </p>
+            <h5 class="my-1">Asad Bek</h5>
+            <p>Tashkent, Uzbekistan</p>
+          </article>
+        </div>
+        <div class="arrows flex flex-column gap-3">
+          <i class="fa-solid fa-chevron-up"></i>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+    <section id="partners">
+      <div class="container flex gap-1 justify-between">
+        <img src="images/axon.png" alt="axon" />
+        <img src="images/axon.png" alt="axon" />
+        <img src="images/axon.png" alt="axon" />
+        <img src="images/axon.png" alt="axon" />
+        <img src="images/axon.png" alt="axon" />
+      </div>
+    </section>
+    <section id="subscribe">
+      <div class="container p-3 flex flex-column gap-3">
+        <div class="plane-icon">
+          <i class="fa-solid fa-location-arrow fa-4x"></i>
+        </div>
+        <h2 class="text-md text-center">
+          Subscribe to get information, latest news and other <br />
+          interesting offers about Jadoo
+        </h2>
+        <form action="/subscribe" class="flex gap-2 subscribe-form">
+          <div class="flex-1">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="Your Email" />
+          </div>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

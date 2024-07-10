@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Saira Stencil One";
+    font-size: 3rem;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    background-color: black;
+}
+
+.weeks-month {
+    font-size: medium;
+}
+
+.dot {
+    color: white;
+    margin-top: 78px;
+    font-size: 40px;
+}
+
+p {
+    font-size: 18px;
+    font-family: serif;
+    text-align: center;
+    font-weight: 700;
+}
+
+h5 {
+    font-family: "Aldrich";
+    font-weight: 800;
+    color: white;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+.clock {
+    background: rgb(31, 28, 28);
+    border: 20px solid grey;
+    padding: 6rem 5rem 5rem 5rem;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 50px;
+}
+
+.time {
+    font-size: 2em;
+    border-radius: 20px;
+    display: flex;
+    /* background-color: #fff; */
+    justify-content: space-between;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <title> Amaliy dars </title>
+</head>
+<body>
+    
+    <ul class="users w-50 mx-auto">
+        <h1 class="fst-italic">User Preferences</h1>
+        <div class="mt-4 d-flex gap-2 align-items-center">
+            <h4 class="fs-3 fw-bolder">Shange a theme:</h4>
+            <select class="fw-medium  h5 px-2 py-1 rounded-3" name="change" id="change">
+                <option class="theme" value="Light">Light</option>
+                <option class="theme" value="Dark">Dark</option>
+            </select>
+        </div>
+        <div class="mt-4 d-flex gap-2 align-items-center">
+            <h4 class="fs-3 fw-bolder">Shange a font size:</h4>
+            <select class="fw-medium h5 px-2 py-1 rounded-3" name="size" id="size">
+                <option class="size" value="small">Small</option>
+                <option class="size" value="medium">Medium</option>
+                <option class="size" value="large">Large</option>
+            </select>
+        </div>
+        <div class="btns d-flex gap-3 mt-5">
+            <button class="save fs-5 btn btn-outline-dark">Save Preferences</button>
+            <button class="clear fs-5 btn btn-outline-dark">Clear Preferences</button>
+        </div>
+    </ul>
+    
+    <script src="JS/main.js"></script>
+</body>
+</html>

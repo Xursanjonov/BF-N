@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Products */
+
+.products {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 300px;
+
+    .product_top {
+
+        .top__left {
+            color: #000;
+            font-family: SVN-Gilroy;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+        }
+
+        .bottom_right {
+            color: var(--primary-color-dark-blue, #003459);
+            font-family: SVN-Gilroy;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px;
+            text-transform: capitalize;
+        }
+    }
+
+    .product__div {
+        display: grid;
+        width: 100% ;
+        margin-top: 50px;
+        grid-template-columns: repeat(4, 280px);
+        grid-template-rows: repeat(2, 378px);
+        gap: 50px;
+
+        .product__card {
+            width: 280px;
+            height: 450px;
+            padding: 8px 8px 0px 8px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 8px;
+            background: white;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            border-radius: 10px;
+
+            &:hover {
+                    box-shadow: 0 0 30px 5px #0003;
+            }
+            &::after {
+                content: "";
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                z-index: -1;
+                left: 5px;
+                bottom: 5px;
+                background: grey;
+                clip-path: polygon(50% 0, 100% 0, 100% 50%, 76% 74%, 50% 100%, 0 100%, 0 50%, 25% 25%);
+                transition: all 0.3s ease-in-out;
+            }
+            &:hover::after {
+                left: -15px;
+                bottom: -15px;
+            }
+
+            .texts--product {
+                padding: 10px;
+            }
+
+            .product__images {
+                border-radius: 10px;
+            }
+
+            .products-titles {
+                color: var(--neutral-color-100, #00171F);
+                /* Body/16px Bold */
+                font-family: SVN-Gilroy;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            .product-texts {
+                padding: 10px 10px 10px 0;
+                display: flex;
+                align-items: flex-start;
+                align-self: stretch;
+                gap: 4px;
+
+                .dot-img {
+                    width: 5px;
+                    height: 18px;
+                }
+
+                .size {
+                    color: var(--neutral-color-60, #667479);
+                    /* Body/12px Medium */
+                    font-family: SVN-Gilroy;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 18px;
+                }
+
+            }
+
+            .dog-food {
+                color: var(--neutral-color-60, #667479);
+                /* Body/12px Bold */
+                font-family: SVN-Gilroy;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 18px;
+
+            }
+
+            .free-toy {
+                margin-top: 5px;
+                padding: 6px 10px 4px 10px;
+                display: flex;
+                align-items: center;
+                align-self: stretch;
+                gap: 5px;
+                border-radius: 8px;
+                background-color: #FCEED5;
+
+                .gm {
+                    color: var(--primary-color-dark-blue-80, #002A48);
+                    /* Body/14px Bold */
+                    font-family: SVN-Gilroy;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .mgtop-5 {
+            margin-top: 50px;
+        }
+    }
+}
+/* Products end */

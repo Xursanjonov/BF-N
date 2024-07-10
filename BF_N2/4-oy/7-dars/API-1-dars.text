@@ -1,0 +1,19 @@
+API 1-dars    23-11-2023
+
+API
+A - Application
+P - Programming
+I - Interface
+
+HTTP and HTTPS  H - Hyper
+H - Hyper       T - Text
+T - Text        T - Transfer
+T - Transfer    P - Pratocol
+P - Pratocol    S - Secured
+
+CRUD
+C - Create  C => Post
+R - Read    R => Get
+U - Update  U => Put, Patch
+D - Delete  D => Delete
+

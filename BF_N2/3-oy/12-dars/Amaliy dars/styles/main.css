@@ -1,0 +1,89 @@
+body {
+    background-color: grey;
+}
+
+* {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+
+.title {
+    width: 400px;
+    height: 80px;
+    padding: 15px;
+    font-size: 48px;
+    text-align: center;
+    background-color: white;
+    color: lime;
+}
+
+.incre, .decre {
+    width: 200px;
+    padding: 5px;
+    font-size: 36px;
+    background-color: aqua;
+}
+
+/* Tasbex */
+
+.tasbehs {
+    width: 400px;
+    height: 500px;
+    padding: 35px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+.number{
+    font-size: 48px;
+    text-align: end;
+    color: lime;
+} 
+
+hr {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+}
+
+.item1 {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    padding: 5px;
+    margin-left: 250px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: greenyellow;
+}
+.item2{
+    width: 150px;
+    height: 150px;
+    margin-top: 60px;
+    /* margin-bottom: 60px; */
+    margin-inline: auto;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 48px;
+}
+
+.item1:active, .item2:active {
+    box-shadow: 0 0 12px 8px grey;
+}
+
+/* Tasbex */

@@ -1,0 +1,39 @@
+/* Import */
+
+
+@import "umumiy/variables";
+@import "umumiy/codes";
+
+
+/* Umumiy scss */
+
+@import "umumiy/header-end-hero";
+
+@import "umumiy/news";
+
+@import "umumiy/explore";
+
+@import "umumiy/products";
+
+@import "umumiy/partners";
+
+@import "umumiy/adoption";
+
+@import "umumiy/knowledge";
+
+@import "umumiy/footer";
+
+/* Import end */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}

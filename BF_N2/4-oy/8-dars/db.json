@@ -1,0 +1,92 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "fName": "Eshmat", 
+            "lName": "Toshmatov", 
+            "age": 32 
+        },
+        {
+            "id": 2,
+            "fName": "Mansur", 
+            "lName": "Akmalov", 
+            "age": 20 
+        },
+        {
+            "id": 3,
+            "fName": "Elbek", 
+            "lName": "Normatov", 
+            "age": 17 
+        },
+        {
+            "id": 4,
+            "fName": "Komil", 
+            "lName": "Baxodirov", 
+            "age": 26 
+        },
+        {
+            "id": 5,
+            "fName": "Vali", 
+            "lName": "Komilov", 
+            "age": 19 
+        }
+    ],
+    "user": [
+        {
+            "id": 1,
+            "name": "jsmith",
+            "actualName": "Jane Smith",
+            "displayName": "Jane Smith (jsmith)"
+        },
+        {
+            "id": 2,
+            "name": "admin",
+            "actualName": null,
+            "displayName": "admin"
+        },
+        {
+            "id": 3,
+            "name": "releaser",
+            "actualName": null,
+            "displayName": "releaser"
+        },
+        {
+            "id": 4,
+            "name": "user",
+            "actualName": null,
+            "displayName": "user"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "userId": 1,
+            "title": "Toshmatov's post",
+            "body": "Toshmatov's post body, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque unde earum nemo nesciunt facere amet eligendi consequuntur. Doloribus doloremque nostrum sequi recusandae architecto similique nisi ut harum, odit iste."
+        },
+        {
+            "id": 2,
+            "userId": 2,
+            "title": "Toshmatov's post",
+            "body": "Toshmatov's post body, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque unde earum nemo nesciunt facere amet eligendi consequuntur. Doloribus doloremque nostrum sequi recusandae architecto similique nisi ut harum, odit iste."
+        },
+        {
+            "id": 3,
+            "userId": 3,
+            "title": "Toshmatov's post",
+            "body": "Toshmatov's post body, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque unde earum nemo nesciunt facere amet eligendi consequuntur. Doloribus doloremque nostrum sequi recusandae architecto similique nisi ut harum, odit iste."
+        },
+        {
+            "id": 4,
+            "userId": 4,
+            "title": "Toshmatov's post",
+            "body": "Toshmatov's post body, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque unde earum nemo nesciunt facere amet eligendi consequuntur. Doloribus doloremque nostrum sequi recusandae architecto similique nisi ut harum, odit iste."
+        },
+        {
+            "id": 5,
+            "userId": 5,
+            "title": "Toshmatov's post",
+            "body": "Toshmatov's post body, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque unde earum nemo nesciunt facere amet eligendi consequuntur. Doloribus doloremque nostrum sequi recusandae architecto similique nisi ut harum, odit iste."
+        }
+    ]
+}

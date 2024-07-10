@@ -1,0 +1,64 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "John Beart",
+            "username": "Shop asisstent",
+            "age": 20
+        },
+        {
+            "id": 2,
+            "name": "Adrean",
+            "username": "Adrean",
+            "age": 25
+        },
+        {
+            "id": 3,
+            "name": "Juli",
+            "username": "Beart",
+            "age": 32
+        },
+        {
+            "id": 4,
+            "name": "Ervin Howel",
+            "username": "Antonette",
+            "age": 17
+        },
+        {
+            "id": 5,
+            "name": "Jane Smith",
+            "username": "Jasmith",
+            "age": 14
+        },
+        {
+            "id": 6,
+            "name": "Donalt Tramp",
+            "username": "Tramp",
+            "age": 67
+        },
+        {
+            "id": 7,
+            "name": "Ilon Musck",
+            "username": "Musck",
+            "age": 52
+        },
+        {
+            "id": 8,
+            "name": "Aleksandr Rybak",
+            "username": "Aleksandr",
+            "age": 57
+        },
+        {
+            "id": 9,
+            "name": "Jorden",
+            "username": "Jorden",
+            "age": 24
+        },
+        {
+            "id": 10,
+            "name": "Son",
+            "username": "Son7",
+            "age": 39
+        }
+    ]
+}

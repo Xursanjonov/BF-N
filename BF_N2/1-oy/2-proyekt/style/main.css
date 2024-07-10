@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.laptops__imgs {
+    display: flex;
+    width: 682.5px;
+    height: 570.531px;
+    padding: 0px 12.5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 51px;
+    flex-shrink: 0;
+    background: url(../image/desc-pads.png) no-repeat;
+}
+
+.card-text-1 {
+    width: 128px;
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.card-text-2 {
+    width: 95px;
+    /* justify-content: space-evenly; */
+    color: white;
+    /* color: #000; */
+    text-align: center;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}

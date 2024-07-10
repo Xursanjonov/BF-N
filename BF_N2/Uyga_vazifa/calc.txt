@@ -1,0 +1,167 @@
+# Jaxongir
+import sys
+
+from PyQt5.QtWidgets import (
+    QApplication, 
+    QWidget, 
+    QHBoxLayout, 
+    QVBoxLayout, 
+    QPushButton,
+    QLabel,
+    QLineEdit
+)
+
+class Button(QPushButton):
+    def __init__(self,text) -> None:
+        super().__init__(text)
+        self.setFixedSize(60,50)
+        self.setStyleSheet('background: #696969; font-size:25px; border-radius: 10px ')
+
+class Botton2(QPushButton):
+    def __init__(self,text) -> None:
+        super().__init__(text)
+        self.setFixedSize(60,50)
+        self.setStyleSheet('background: #9400D3; font-size:25px; border-radius: 10px ')
+
+class Button1(QPushButton):
+    def __init__(self,text) -> None:
+        super().__init__(text)
+        self.setFixedSize(60,50)
+        self.setStyleSheet('background: blue; font-size:25px; border-radius: 8px ')
+
+
+class Calc(QWidget):
+    def __init__(self) -> None:
+        super().__init__()
+        self.setFixedSize(400,500)
+
+        self.text=""
+
+        self.v_box = QVBoxLayout()
+        self.h_box1 = QHBoxLayout()
+        self.h_box2 = QHBoxLayout()
+        self.h_box3 = QHBoxLayout()
+        self.h_box4 = QHBoxLayout()
+        self.h_box5 = QHBoxLayout()
+
+        self.label_output = QLabel()
+        self.label_output.setStyleSheet('font-size : 15px ')
+        self.edit_display = QLineEdit()
+        self.edit_display.setStyleSheet('background: grey ; font-size : 20px ')
+        self.label_msg = QLabel()
+        self.label_msg.setStyleSheet('background: #fff ; font-size : 16px ')
+        
+        self.btn0 = Botton2('0')
+        self.btn1 = Botton2('1')
+        self.btn2 = Botton2('2')
+        self.btn3 = Botton2('3')
+        self.btn4 = Botton2('4')
+        self.btn5 = Botton2('5')
+        self.btn6 = Botton2('6')
+        self.btn7 = Botton2('7')
+        self.btn8 = Botton2('8')
+        self.btn9 = Botton2('9')
+
+        self.btn_add = Button1('+')
+        self.btn_sub = Button1('-')
+        self.btn_mul = Button1('*')
+        self.btn_div = Button1('/')
+        
+        self.btn_equal = Button('=')
+        self.btn_backspace = Button('⌫')
+        self.btn_c = Button('C')
+        self.btn_dot = Button('.')
+        self.btn_b_open = Button('(')
+        self.btn_b_close = Button(')')
+
+        self.h_box1.addWidget(self.btn_b_open)
+        self.h_box1.addWidget(self.btn_b_close)
+        self.h_box1.addWidget(self.btn_c)
+        self.h_box1.addWidget(self.btn_backspace)
+
+        self.h_box2.addWidget(self.btn7)
+        self.h_box2.addWidget(self.btn8)
+        self.h_box2.addWidget(self.btn9)
+        self.h_box2.addWidget(self.btn_mul)
+
+        self.h_box3.addWidget(self.btn4)
+        self.h_box3.addWidget(self.btn5)
+        self.h_box3.addWidget(self.btn6)
+        self.h_box3.addWidget(self.btn_div)
+
+        self.h_box4.addWidget(self.btn1)
+        self.h_box4.addWidget(self.btn2)
+        self.h_box4.addWidget(self.btn3)
+        self.h_box4.addWidget(self.btn_add)
+
+        self.h_box5.addWidget(self.btn_dot)
+        self.h_box5.addWidget(self.btn0)
+        self.h_box5.addWidget(self.btn_equal)
+        self.h_box5.addWidget(self.btn_sub)
+
+        self.v_box.addWidget(self.label_output)
+        self.v_box.addWidget(self.edit_display)
+        self.v_box.addWidget(self.label_msg)
+        
+        self.v_box.addLayout(self.h_box1)
+        self.v_box.addLayout(self.h_box2)
+        self.v_box.addLayout(self.h_box3)
+        self.v_box.addLayout(self.h_box4)
+        self.v_box.addLayout(self.h_box5)
+
+        self.setLayout(self.v_box)
+
+        self.btn0.clicked.connect(self.print_display)
+        self.btn1.clicked.connect(self.print_display)
+        self.btn2.clicked.connect(self.print_display)
+        self.btn3.clicked.connect(self.print_display)
+        self.btn4.clicked.connect(self.print_display)
+        self.btn5.clicked.connect(self.print_display)
+        self.btn6.clicked.connect(self.print_display)
+        self.btn7.clicked.connect(self.print_display)
+        self.btn8.clicked.connect(self.print_display)
+        self.btn9.clicked.connect(self.print_display)
+        self.btn_add.clicked.connect(self.print_display)
+        self.btn_sub.clicked.connect(self.print_display)
+        self.btn_mul.clicked.connect(self.print_display)
+        self.btn_div.clicked.connect(self.print_display)
+        self.btn_b_open.clicked.connect(self.print_display)
+        self.btn_b_close.clicked.connect(self.print_display)
+        self.btn_dot.clicked.connect(self.print_display)
+
+        self.btn_equal.clicked.connect(self.equal)
+        self.btn_c.clicked.connect(self.delete)
+        self.btn_backspace.clicked.connect(self.backspace)
+
+        self.show()
+
+    def print_display(self):
+        btn = self.sender().text()
+        self.text+=btn
+        self.edit_display.setText(self.text)
+    
+    def equal(self):
+        try:
+           self.label_output.setText(f"{self.text} = {str(eval(self.text))}")
+           self.edit_display.clear()
+           self.text =""
+           self.label_msg.clear()
+        except ZeroDivisionError:
+            self.label_msg.setText(" Zero division eror ! ")
+        except:
+            self.label_msg.setText(" Malformed expresson ! ")
+
+    def delete(self):
+        self.label_output.clear()
+        self.edit_display.setText("0")
+        self.text = ""
+        self.label_msg.clear()
+
+    def backspace(self):
+        self.text=self.text[:-1]
+        self.edit_display.setText(self.text)
+    
+
+app = QApplication(["Calculator"])
+win = Calc()
+sys.exit(app.exec_())

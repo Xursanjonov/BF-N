@@ -1,0 +1,98 @@
+import sys
+
+from random import shuffle
+from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QHBoxLayout, QGridLayout, QLabel
+
+class Button(QPushButton):
+    def __init__(self, text) -> None:
+        super().__init__(text)
+        self.setFixedSize(100,100)
+        self.setStyleSheet('background: #7FFFD4; border-radius: 50px; font-size: 60px')
+        
+class Puzzle15(QWidget):
+    def __init__(self) -> None:
+        super().__init__()
+        self.setWindowTitle('15 Puzzle')
+        self.setFixedSize(500,600)
+        self.setStyleSheet('background: #483D8B')
+
+        self.v_box = QVBoxLayout()
+        self.grid = QGridLayout()
+
+        self.btn = Button('Exit')
+
+        self.cur_nums = list(range(1,16)) + ['']
+        shuffle(self.cur_nums)
+        print(self.cur_nums)
+        self.matrit_btns = list()
+        self.index_btns = 0
+
+        self.v_box.addWidget(self.btn)
+
+        for i in range(4):
+            lst = list()
+            for j in range(4):
+                lst.append(Button(str(self.cur_nums[self.index_btns])))
+                self.index_btns+=1
+            self.matrit_btns.append(lst)
+        
+        for i in range(4):
+            for j in range(4):
+                self.grid.addWidget(self.matrit_btns[i][j], i,j)
+        
+        self.connectionBtns()
+
+        self.setLayout(self.grid)
+
+        self.show()
+    
+    def connectionBtns(self):
+        for i in range(4):
+            for j in range(4):
+                self.matrit_btns[i][j].clicked.connect(self.OnClickedBtns)
+
+    def OnClickedBtns(self):
+        btn = self.sender()
+        for i in range(4):
+            for j in range(4):
+                if btn.text() == str(self.matrit_btns[i][j].text()):
+                    try:
+                        if self.matrit_btns[i-1][j].text() == '':
+                            self.matrit_btns[i-1][j].setText(btn.text())
+                            self.matrit_btns[i-1][j].show()
+                            btn.setText('')
+                            btn.hide()
+                        elif self.matrit_btns[i+1][j].text() == '':
+                            self.matrit_btns[i+1][j].setText(btn.text())
+                            self.matrit_btns[i+1][j].show()
+                            btn.setText('')
+                            btn.hide()
+                    except:
+                        pass
+                    try:
+                        if self.matrit_btns[i][j-1].text() == '':
+                            self.matrit_btns[i][j-1].setText(btn.text())
+                            self.matrit_btns[i][j-1].show()
+                            btn.setText('')
+                            btn.hide()
+                        elif self.matrit_btns[i][j+1].text() == '':
+                            self.matrit_btns[i][j+1].setText(btn.text())
+                            self.matrit_btns[i][j+1].show()
+                            btn.setText('')
+                            btn.hide()
+                    except:
+                        pass
+                    
+'''
+i = eni, j = boyi
+
+[0-0],[0-1],[0-2],[0-3]
+[1-0],[1-1],[1-2],[1-3]
+[2-0],[2-1],[2-2],[2-3]
+[3-0],[3-1],[3-2],[3-3]
+
+'''
+
+app = QApplication(sys.argv)
+win = Puzzle15()
+sys.exit(app.exec())

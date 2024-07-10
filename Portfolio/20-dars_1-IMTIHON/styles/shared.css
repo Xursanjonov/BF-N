@@ -1,0 +1,396 @@
+/* reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #23155b;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+.button {
+  all: unset;
+  box-sizing: border-box;
+  padding: 0.8em 1.6em;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover,
+.button:hover {
+  animation: button-hover 0.3s ease-in-out 1;
+}
+
+.primary-button {
+  background-color: #8053ff;
+  color: #fff;
+}
+
+.primary-button:hover {
+  background-color: #23155b;
+  box-shadow: 0 0 20px #0002;
+}
+
+.primary-button:active,
+.primary-button:focus {
+  background-color: #928cab;
+}
+
+.secondary-button {
+  background-color: transparent;
+  border: 1px solid #8053ff;
+  color: #8053ff;
+}
+
+.secondary-button:hover {
+  background-color: #23155b;
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 0 20px #0002;
+}
+
+@keyframes button-hover {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* reset end */
+
+/* utils */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-inline: 3rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.gap-0 {
+  gap: 0;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.flex-5 {
+  flex: 5;
+}
+
+.flex-6 {
+  flex: 6;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-sm {
+  font-size: 1rem;
+}
+
+.text-md {
+  font-size: 1.5rem;
+}
+
+.text-lg {
+  font-size: 3rem;
+}
+
+.text-xl {
+  font-size: 4rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.mx-1 {
+  margin-inline: 1rem;
+}
+
+.my-1 {
+  margin-block: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.mx-2 {
+  margin-inline: 2rem;
+}
+
+.my-2 {
+  margin-block: 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.mx-3 {
+  margin-inline: 3rem;
+}
+
+.my-3 {
+  margin-block: 3rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.px-1 {
+  padding-inline: 1rem;
+}
+
+.py-1 {
+  padding-block: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.px-2 {
+  padding-inline: 2rem;
+}
+
+.py-2 {
+  padding-block: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.px-3 {
+  padding-inline: 3rem;
+}
+
+.py-3 {
+  padding-block: 3rem;
+}
+
+.text-primary {
+  color: #8053ff;
+}
+
+/* utils end */
+
+/* header#main-header */
+header#main-header {
+  font-size: 16px;
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.main-nav-items {
+  margin-left: auto;
+}
+/* header#main-header end */
+
+/* section#for-investors */
+section#for-investors {
+  background: linear-gradient(#fbfaff, #fff);
+  border-top-right-radius: 250px;
+  display: flex;
+  align-items: center;
+}
+
+section#for-investors .answers {
+  flex-wrap: wrap;
+}
+section#for-investors .answer {
+  box-shadow: 0 0 20px #0002;
+  padding: 1rem 3rem;
+  font-size: 18px;
+  line-height: 1.8;
+  position: relative;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  width: 48%;
+}
+
+section#for-investors .answer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px #0002;
+}
+
+section#for-investors .answer h3 {
+  position: relative;
+}
+
+section#for-investors .green-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #00d386;
+  line-height: 38px;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+}
+
+section#for-investors .green-circle i {
+  color: white;
+}
+/* section#for-investors end */
+
+/* footer#main-footer */
+footer#main-footer {
+  background: #23155b;
+  color: white;
+  border-top-left-radius: 250px;
+  padding: 8rem;
+}
+
+footer#main-footer label,
+footer#main-footer textarea,
+footer#main-footer input {
+  width: 100%;
+  margin-block: 1rem;
+}
+footer#main-footer label {
+  font-size: 14px;
+}
+footer#main-footer textarea,
+footer#main-footer input {
+  padding: 0.6em 1.6em;
+  border-radius: 5px;
+}
+footer#main-footer button {
+  width: 232px;
+  text-align: center;
+}
+footer#main-footer button:hover {
+  background: #8053ff;
+}
+/* footer#main-footer end */

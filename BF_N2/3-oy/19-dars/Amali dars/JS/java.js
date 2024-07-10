@@ -1,0 +1,1 @@
+let shops = { Non: 2, olma: 4, yog: 13, gosh: 70, kartoshka: 7, sabzi: 6 };

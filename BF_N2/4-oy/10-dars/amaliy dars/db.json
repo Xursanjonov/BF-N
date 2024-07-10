@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Grahamdwwwsdsds",
+      "username": "Breatddddd",
+      "email": "Sincere@april.bizddddd",
+      "phone": ""
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "username": "DoeJohn",
+      "email": "john@march.doe",
+      "phone": "1-234-536-4327"
+    },
+    {
+      "id": 3,
+      "name": "Eshmat Toshmatov",
+      "username": "eshmattoshmatov",
+      "email": "toshmatov@may.eshmat",
+      "phone": "2-756-968-1234"
+    },
+    {
+      "id": 4,
+      "name": "Sergio Gomes",
+      "username": "Gomes",
+      "email": "gomes@september.com",
+      "phone": "7-965-85-032"
+    },
+    {
+      "id": 5,
+      "name": "Abbos Ermatov",
+      "username": "ermatovAbbos",
+      "email": "abbos-ermatov@gmail.com",
+      "phone": ""
+    },
+    {
+      "id": 6,
+      "name": "Komil Anvarov",
+      "username": "komil_anvarov",
+      "email": "anvarov-komil@gmail.com",
+      "phone": "7-967-12-856"
+    }
+  ]
+}

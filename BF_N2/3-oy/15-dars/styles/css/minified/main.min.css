@@ -1,0 +1,1 @@
+h1::after{content:"";border-right:3px solid #000;animation:cursor ease-in-out 1s infinite alternate}@keyframes cursor{to{border-right-color:#fff}}/*# sourceMappingURL=main.min.css.map */
